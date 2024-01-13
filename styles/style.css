@@ -17,6 +17,7 @@
 /* header section style Start */
 header{
     background: rgba(255, 144, 14, 0.10);
+    padding:50px 240px ;
 }
 
 .nav-logo{
