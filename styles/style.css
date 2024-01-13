@@ -27,7 +27,6 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 
 nav h3{
@@ -73,8 +72,80 @@ nav a{
 
 }
 
-.banner-image{
-    border: 10px;
-    padding:  0px auto;
-    margin-top: 50px; 
+.banner img{
+    max-width: 100%;
 }
+/* main style */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* teams sections start */
+.teams-container{
+    display:flex;
+    align-items: center;
+    gap: 40px;
+    margin: 150px;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+
+.teams-content{
+    padding-left: 70px;
+    padding-right: 70px;
+
+}
+
+.teams-title{
+    max-width: 470px;
+    font-size: 2.8rem;
+    font-weight: 700;
+
+}
+
+.teams-title .quick-list{
+   color: #727272;
+   font-weight: 500;
+}
+.teams-title .text-features{
+  color: #FF900E;
+}
+/* Responsive media queries */
+
+@media screen and (max-width:576px) {
+    
+    
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .banner-title{
+        font-size: 3rem;
+    
+    }
+    .banner-content{
+        text-align: left;
+    }
+    .banner img{
+       min-width: 100%;
+    }
+}
+@media screen and (min-width:576px) and (max-width:980px){
+    header{
+        padding: 50px;
+    }
+    .banner-title{
+        font-size: 2.5rem;
+    
+    }
+    nav h3{
+        font-size: 2rem;
+    }
+}
+
+
