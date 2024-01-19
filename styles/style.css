@@ -12,11 +12,12 @@
     border-radius: 9px;
     padding: 20px 25px;
     margin: 35px;
+    border: none;
 }
 .content-paragraph{ 
-    font-size: 1rem;
-    height: 30px;
+    font-size: 1.85rem ;
     color: #727272;
+    line-height: 40px;
     
 }
 
@@ -58,11 +59,12 @@ nav a{
 /* banner style start */
 
 .banner-content{
-    max-width: 870px;
+    max-width: 1120px;
     text-align: center;
-    margin: 0 auto;
-
+    margin: 0px auto;
+    padding: 0px 70px;
 }
+
 .banner-title{
     color: #131313;
     font-size: 4rem;
@@ -78,6 +80,10 @@ nav a{
 }
 
 .banner img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
     max-width: 100%;
 }
 /* main style */
@@ -100,9 +106,7 @@ main{
 }
 
 .teams-content{
-    padding-left: 70px;
-    padding-right: 70px;
-
+    margin-left: 70px;
 }
 
 .teams-title{
@@ -116,9 +120,14 @@ main{
    color: #727272;
    font-weight: 500;
 }
+
+
+
 .teams-title .text-features{
   color: #FF900E;
+
 }
+
 
 
 .Features-content{
@@ -126,12 +135,15 @@ main{
     justify-content: center;
     gap: 30px;
     margin-top: 150px;
-}
 
-.Fetur-paragraph{
-    width:586px ;  
 
 }
+
+
+
+
+
+
 
 .Fetur-paragraph h1{
     font-size:3.75rem;
@@ -201,6 +213,13 @@ margin-top: 5px;
 
 @media screen and (max-width:576px) {
     
+    .content-paragraph{ 
+        font-size: 1rem ;
+     line-height: 26px;
+            
+        }
+        
+    
     
     header{
         padding: 20px;
@@ -217,9 +236,69 @@ margin-top: 5px;
     }
     .banner img{
        min-width: 100%;
+    } 
+    
+    .teams-content {
+    margin:0px auto;
+    padding: 15px;
     }
+    .teams-container {
+        flex-direction: column-reverse;
+       
+    }
+    .team-img-container {
+        grid-template-columns: repeat(1,1fr);
+     
+    }
+    .Features-content {
+       flex-direction: column;
+
+    }
+
+    .Features-content .architect-offer img {
+        width: 350px;
+        height: 410px;
+        margin:0 auto;
+     
+    }
+
+    .Features-content .architect-offer .offer h2 {
+        font-size: 2.5rem;
+        line-height: 70px;
+        padding-left: 35px;
+    }
+
+    .Features-content .architect-offer .offer {
+        width: 245px;
+        border-radius: 8px;
+        height: 150px;
+    }
+
+ .Fetur-paragraph h1 {
+    font-size: 2.75rem;
+
+ }
+
+.fetur-card { 
+ margin: 0px auto;
+
 }
+
+}
+
+
+
+
+
+
 @media screen and (min-width:576px) and (max-width:980px){
+    .content-paragraph{ 
+        font-size: 1rem ;
+     line-height: 26px;
+            
+        }
+    
+    
     header{
         padding: 50px;
     }
@@ -230,6 +309,40 @@ margin-top: 5px;
     nav h3{
         font-size: 2rem;
     }
-}
 
+    .teams-container{
+        flex-direction: column;
+   
+    } 
+
+    .team-img-container {
+        grid-template-columns: repeat(2,1fr);
+     
+    }
+    .Features-content .architect-offer img {
+        width: 550px;
+        height: 600px;
+     
+    }
+.Features-content {
+       flex-direction: column;
+
+    }
+    .Features-content .architect-offer .offer {
+        width: 245px;
+        border-radius: 8px;
+        height: 150px;
+        left: 40px;
+        margin: 0px auto;
+    }
+    .Features-content .architect-offer img {
+        width: 550px;
+        height: 570px;
+        margin:0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+    }
+}
 
