@@ -13,6 +13,12 @@
     padding: 20px 25px;
     margin: 35px;
 }
+.content-paragraph{ 
+    font-size: 1rem;
+    height: 30px;
+    color: #727272;
+    
+}
 
 /* header section style Start */
 header{
@@ -65,10 +71,9 @@ nav a{
     padding-top: 200px;
 
 }
-.banner-description{
+
+.teams-content > .content-paragraph{
     margin-top:15px ;
-    font-size:1.5rem ;
-    color: #727272;
 
 }
 
@@ -78,14 +83,15 @@ nav a{
 /* main style */
 main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 150px auto;
 }
+
+
 /* teams sections start */
 .teams-container{
     display:flex;
     align-items: center;
     gap: 40px;
-    margin: 150px;
 }
 .team-img-container{
     display: grid;
@@ -113,6 +119,84 @@ main{
 .teams-title .text-features{
   color: #FF900E;
 }
+
+
+.Features-content{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 150px;
+}
+
+.Fetur-paragraph{
+    width:586px ;  
+
+}
+
+.Fetur-paragraph h1{
+    font-size:3.75rem;
+    color: #131313;
+
+}
+
+
+.fetur-card{
+    background-color:#FFF;
+    border-radius:8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin: 20px;
+}
+
+.Features-content .architect-offer img {
+    width: 610px;
+    height: 785px;
+    margin-left: 100px;
+}
+.Features-content .architect-offer .offer{
+    background-color: #FF900E; ;
+    width: 345px; 
+    height:200px ;
+    border-radius: 8px;
+}
+.Features-content .architect-offer .offer h2{
+    text-align: center;
+    color: #FFF;
+    font-size: 4.06rem;
+    line-height: 70px;
+    font-weight: 400px;
+    margin:0px auto;
+    padding-top:35px;
+}
+.Features-content .architect-offer .offer h3{
+color: #FFF;
+text-align: center;
+font-size: 1.5rem;
+font-weight: 500;
+line-height: 40px;
+margin-top: 5px;
+}
+.architect-offer{
+    position: relative;
+}
+.offer{
+    position:absolute;
+    bottom: -100px;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive media queries */
 
 @media screen and (max-width:576px) {
